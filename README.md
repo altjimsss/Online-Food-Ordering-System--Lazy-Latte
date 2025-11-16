@@ -1,6 +1,6 @@
 # Lazy Latte - Online Food Ordering System
 
-[Lazy Latte](https://altjimsss.github.io/Online-Food-Ordering-System--Lazy-Latte/) is a comprehensive On-Demand Food Ordering System (OFOS) designed for modern cafe operations.
+[Lazy Latte](https://online-food-ordering-system-lazy-la.vercel.app/) is a comprehensive On-Demand Food Ordering System (OFOS) designed for modern cafe operations.
 
 ## Application Flow & Screenshots
 
