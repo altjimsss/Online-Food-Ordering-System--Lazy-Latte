@@ -1,12 +1,12 @@
 # Lazy Latte - Online Food Ordering System
 
-A comprehensive On-Demand Food Ordering System (OFOS) designed for modern cafe operations.
+[Lazy Latte](https://altjimsss.github.io/Online-Food-Ordering-System--Lazy-Latte/) is a comprehensive On-Demand Food Ordering System (OFOS) designed for modern cafe operations.
 
 ## Application Flow & Screenshots
 
-### 1. Login/Register Page
+### 1. Login/Register Page with Google OAuth
 ![Login/Register Page](img/Screenshot%202025-11-16%20221647.png)
-*User authentication and account creation*
+*User authentication with Google OAuth integration and traditional account creation*
 
 ### 2. Preloader Page
 ![Preloader Page](img/Screenshot%202025-11-16%20221717.png)
@@ -40,17 +40,20 @@ A comprehensive On-Demand Food Ordering System (OFOS) designed for modern cafe o
 ![Staff Page](img/Screenshot%202025-11-16%20222259.png)
 *Staff interface for order processing*
 
-## Live Demo
-[View Live Website](https://altjimsss.github.io/Online-Food-Ordering-System--Lazy-Latte/)
-
 ## Features Overview
+
+### Authentication System
+- **Google OAuth Integration** - Secure login with Google accounts
+- **Traditional Registration** - Email and password based accounts
+- **Session Management** - Persistent login state
+- **Role-based Access** - Different permissions for customers, staff, and admins
 
 ### Customer Features
 - Menu browsing with categories and ratings
-- Product customization
-- Shopping cart and favorites
+- Product customization options
+- Shopping cart and favorites system
 - Order tracking and history
-- Loyalty points system
+- Loyalty points and rewards program
 
 ### Staff Features
 - Order management dashboard
@@ -59,13 +62,14 @@ A comprehensive On-Demand Food Ordering System (OFOS) designed for modern cafe o
 - Customer information access
 
 ### Admin Features
-- Menu management
+- Menu management system
 - User management
 - Analytics and reports
 - System configuration
 
 ## Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript ES6+
+- **Authentication**: Google OAuth 2.0
 - **Storage**: JSON, LocalStorage
 - **Icons**: Font Awesome
 - **Effects**: Canvas Confetti
