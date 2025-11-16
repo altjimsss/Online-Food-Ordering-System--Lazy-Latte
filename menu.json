@@ -1,0 +1,4059 @@
+{
+  "menu": [
+    {
+      "category": "COFFEE",
+      "name": "Espresso",
+      "description": "Rich and bold espresso shot made from premium Arabica beans.",
+      "basePrice": 120.00,
+      "rating": 4.7,
+      "reviewCount": 66,
+      "image": "https://cdn-s-www.ledauphine.com/images/E4D07D1C-6E7E-4EE4-A1E0-FF84D8296902/NW_raw/chaque-jour-les-chercheurs-ont-administre-a-des-souris-une-dose-de-cafeine-equivalente-a-environ-trois-tasses-de-cafe-chez-l-humain-photo-adobe-stock-1658238893.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Single Shot",
+            "Double Shot",
+            "Triple Shot"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Bean Type": {
+          "options": [
+            "House Blend",
+            "Single Origin",
+            "Decaf"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "None",
+            "Whole Milk",
+            "Oat Milk",
+            "Almond Milk"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Sugar Level": {
+          "options": [
+            "No Sugar",
+            "Light Sugar",
+            "Regular",
+            "Extra Sugar"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Cappuccino",
+      "description": "Perfectly balanced espresso with steamed milk and dense foam.",
+      "basePrice": 140.00,
+      "rating": 4.5,
+      "reviewCount": 106,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrgERIWzIA1Civ7Wlt3HwF0uiDaLV95CoLQ&s",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Soy Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Foam Level": {
+          "options": [
+            "Standard",
+            "Extra Foam",
+            "Light Foam"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            0.0
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "1 Sugar",
+            "2 Sugars",
+            "3 Sugars"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Latte",
+      "description": "Smooth espresso with velvety steamed milk and light foam.",
+      "basePrice": 150.00,
+      "rating": 4.8,
+      "reviewCount": 256,
+      "image": "https://www.drinksupercoffee.com/cdn/shop/articles/fae84ed5-a18c-4da8-95d8-d38d576fa3b1_latte_2a0c8c48-b26b-48a0-8079-f999ed9fa3fd.jpg?v=1746120400&width=2048",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Soy Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Flavor Shots": {
+          "options": [
+            "None",
+            "Vanilla",
+            "Caramel",
+            "Hazelnut",
+            "Mocha"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00,
+            20.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Cinnamon",
+            "Cocoa Powder",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Americano",
+      "description": "Bold espresso shots topped with hot water for a rich flavor.",
+      "basePrice": 100.00,
+      "rating": 4.7,
+      "reviewCount": 105,
+      "image": "https://myeverydaytable.com/wp-content/uploads/americano-1024x576.png",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Strength": {
+          "options": [
+            "Regular",
+            "Strong",
+            "Extra Strong"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        },
+        "Sweetener": {
+          "options": [
+            "None",
+            "Sugar",
+            "Honey",
+            "Stevia"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            0.0
+          ]
+        },
+        "Cream": {
+          "options": [
+            "None",
+            "Light Cream",
+            "Regular Cream",
+            "Extra Cream"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Mocha",
+      "description": "Rich chocolate combined with espresso and steamed milk.",
+      "basePrice": 160.00,
+      "rating": 4.3,
+      "reviewCount": 210,
+      "image": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/the_perfect_mocha_coffee_29100_16x9.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Chocolate Type": {
+          "options": [
+            "Dark Chocolate",
+            "Milk Chocolate",
+            "White Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Whipped Cream",
+            "Chocolate Shavings",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            20.00,
+            20.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Less Sweet",
+            "Regular",
+            "Extra Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Cold Brew",
+      "description": "Smooth cold brew coffee steeped for 18 hours for optimal flavor.",
+      "basePrice": 140.00,
+      "rating": 4.7,
+      "reviewCount": 79,
+      "image": "https://www.happyfoodstube.com/wp-content/uploads/2023/08/orange-cold-brew-9.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Strength": {
+          "options": [
+            "Regular",
+            "Strong",
+            "Concentrated"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light Sweet",
+            "Regular",
+            "Extra Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Vanilla Syrup",
+            "Caramel Syrup",
+            "Cinnamon"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Flat White",
+      "description": "Velvety microfoam over a double ristretto shot.",
+      "basePrice": 150.00,
+      "rating": 4.3,
+      "reviewCount": 60,
+      "image": "https://static.toiimg.com/thumb/86699095.cms?imgsize=59654&width=800&height=800",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (6oz)",
+            "Regular (8oz)",
+            "Large (12oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00
+          ]
+        },
+        "Temperature": {
+          "options": [
+            "Hot",
+            "Extra Hot",
+            "Warm"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Sweetener": {
+          "options": [
+            "None",
+            "Raw Sugar",
+            "Brown Sugar",
+            "Honey"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Macchiato",
+      "description": "Espresso stained with a small amount of steamed milk.",
+      "basePrice": 110.00,
+      "rating": 4.5,
+      "reviewCount": 251,
+      "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=300&h=300&fit=crop",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Single",
+            "Double",
+            "Triple"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00
+          ]
+        },
+        "Foam": {
+          "options": [
+            "Light Foam",
+            "Regular Foam",
+            "Extra Foam"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00
+          ]
+        },
+        "Sugar": {
+          "options": [
+            "No Sugar",
+            "1 Sugar Packet",
+            "2 Sugar Packets"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Iced Latte",
+      "description": "Chilled espresso with cold milk over ice.",
+      "basePrice": 140.00,
+      "rating": 4.8,
+      "reviewCount": 306,
+      "image": "https://myeverydaytable.com/wp-content/uploads/ICEDLATTE_0_4.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00
+          ]
+        },
+        "Ice Level": {
+          "options": [
+            "Light Ice",
+            "Regular Ice",
+            "Extra Ice"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Flavor Syrup": {
+          "options": [
+            "None",
+            "Vanilla",
+            "Caramel",
+            "Hazelnut"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Hazelnut Latte",
+      "description": "Rich latte infused with sweet hazelnut flavor.",
+      "basePrice": 160.00,
+      "rating": 4.8,
+      "reviewCount": 235,
+      "image": "https://boilerscoffeeco.com/wp-content/uploads/2024/04/hazelnut-latte.webp",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00
+          ]
+        },
+        "Hazelnut Level": {
+          "options": [
+            "Light",
+            "Regular",
+            "Extra"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Whipped Cream",
+            "Hazelnut Crunch",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            20.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Caramel Latte",
+      "description": "Smooth latte with sweet caramel syrup.",
+      "basePrice": 160.00,
+      "rating": 4.6,
+      "reviewCount": 206,
+      "image": "https://www.chilitochoc.com/wp-content/uploads/2022/12/homemade-caramel-latte-ft.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00
+          ]
+        },
+        "Caramel Level": {
+          "options": [
+            "Light",
+            "Regular",
+            "Extra Caramel"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Caramel Drizzle",
+            "Sea Salt",
+            "Whipped Cream"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Vanilla Cold Brew",
+      "description": "Smooth cold brew infused with vanilla notes.",
+      "basePrice": 150.00,
+      "rating": 4.7,
+      "reviewCount": 177,
+      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Vanilla Type": {
+          "options": [
+            "French Vanilla",
+            "Madagascar Vanilla",
+            "Sugar-Free Vanilla"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            0.0
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light",
+            "Regular",
+            "Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Cream": {
+          "options": [
+            "None",
+            "Light Cream",
+            "Sweet Cream",
+            "Heavy Cream"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Irish Coffee",
+      "description": "Classic coffee with Irish whiskey and cream.",
+      "basePrice": 220.00,
+      "rating": 4.7,
+      "reviewCount": 258,
+      "image": "https://www.pamperedchef.com/iceberg/com/recipe/2132757-lg.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular (8oz)",
+            "Large (12oz)"
+          ],
+          "prices": [
+            0.0,
+            40.00
+          ]
+        },
+        "Whiskey Type": {
+          "options": [
+            "Jameson",
+            "Bushmills",
+            "Tullamore Dew"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            30.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Less Sweet",
+            "Regular",
+            "Extra Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Cream": {
+          "options": [
+            "Whipped Cream",
+            "Baileys Cream",
+            "No Cream"
+          ],
+          "prices": [
+            15.00,
+            40.00,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Affogato",
+      "description": "Espresso poured over vanilla gelato.",
+      "basePrice": 180.00,
+      "rating": 4.9,
+      "reviewCount": 169,
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/07/affogato.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Single Scoop",
+            "Double Scoop"
+          ],
+          "prices": [
+            0.0,
+            40.00
+          ]
+        },
+        "Ice Cream": {
+          "options": [
+            "Vanilla Gelato",
+            "Chocolate Gelato",
+            "Hazelnut Gelato"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            30.00
+          ]
+        },
+        "Espresso Shots": {
+          "options": [
+            "Single Shot",
+            "Double Shot"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Chocolate Sauce",
+            "Caramel Sauce",
+            "Biscotti"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "COFFEE",
+      "name": "Café au Lait",
+      "description": "Equal parts coffee and steamed milk.",
+      "basePrice": 120.00,
+      "rating": 4.5,
+      "reviewCount": 269,
+      "image": "https://www.homegrounds.co/wp-content/uploads/2023/03/cafe-au-lait--675x675.jpeg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Skim Milk",
+            "Oat Milk",
+            "Almond Milk"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            15.00
+          ]
+        },
+        "Coffee Strength": {
+          "options": [
+            "Light Roast",
+            "Medium Roast",
+            "Dark Roast"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00
+          ]
+        },
+        "Sweetener": {
+          "options": [
+            "None",
+            "Sugar",
+            "Honey",
+            "Brown Sugar"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Matcha Latte",
+      "description": "Premium ceremonial grade matcha whisked with steamed milk.",
+      "basePrice": 150.00,
+      "rating": 4.7,
+      "reviewCount": 271,
+      "image": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=300&h=300&fit=crop",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Matcha Grade": {
+          "options": [
+            "Ceremonial",
+            "Premium",
+            "Culinary"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            50.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light Sweet",
+            "Regular Sweet",
+            "Extra Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Coconut Milk"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Chai Latte",
+      "description": "Spiced chai tea blend with steamed milk and honey.",
+      "basePrice": 140.00,
+      "rating": 4.7,
+      "reviewCount": 49,
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/01/chai-latte.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Spice Level": {
+          "options": [
+            "Mild",
+            "Medium",
+            "Extra Spicy"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        },
+        "Sweetener": {
+          "options": [
+            "Honey",
+            "Sugar",
+            "Maple Syrup",
+            "No Sweetener"
+          ],
+          "prices": [
+            10.00,
+            0.0,
+            15.00,
+            0.0
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Soy Milk"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Earl Grey Tea",
+      "description": "Classic black tea infused with bergamot oil.",
+      "basePrice": 100.00,
+      "rating": 4.5,
+      "reviewCount": 109,
+      "image": "https://weeteacompany.com/wp-content/uploads/2024/11/earl-grey-tea.webp",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Pot",
+            "Medium Pot",
+            "Large Pot"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Strength": {
+          "options": [
+            "Light Brew",
+            "Medium Brew",
+            "Strong Brew"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Lemon Slice",
+            "Milk",
+            "Honey"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            15.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light Sugar",
+            "Regular Sugar"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "English Breakfast Tea",
+      "description": "Robust blend of black teas perfect for morning.",
+      "basePrice": 100.00,
+      "rating": 4.8,
+      "reviewCount": 159,
+      "image": "https://cdn.shopify.com/s/files/1/0615/9253/5282/files/Products_Signature_English_Breakfast_Horizontal_sz_1024x1024.jpg?v=1668614190",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Pot",
+            "Medium Pot",
+            "Large Pot"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Milk": {
+          "options": [
+            "No Milk",
+            "Light Milk",
+            "Regular Milk",
+            "Extra Milk"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            15.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "1 Sugar",
+            "2 Sugars",
+            "3 Sugars"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Strength": {
+          "options": [
+            "Light",
+            "Medium",
+            "Strong"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Oolong Tea",
+      "description": "Partially oxidized tea with complex floral notes.",
+      "basePrice": 120.00,
+      "rating": 4.6,
+      "reviewCount": 117,
+      "image": "https://fullleafteacompany.com/cdn/shop/files/Oolong_3_1_5f481fd2-156a-435a-86f3-49a612b6a679_610x_crop_center.jpg?v=1700005590",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Pot",
+            "Medium Pot",
+            "Large Pot"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Brew Time": {
+          "options": [
+            "Light (2 min)",
+            "Medium (3 min)",
+            "Strong (5 min)"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Temperature": {
+          "options": [
+            "185°F",
+            "195°F",
+            "205°F"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Sweetener": {
+          "options": [
+            "None",
+            "Rock Sugar",
+            "Honey"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Jasmine Green Tea",
+      "description": "Delicate green tea scented with jasmine flowers.",
+      "basePrice": 110.00,
+      "rating": 4.8,
+      "reviewCount": 326,
+      "image": "https://lesthesfloraltea.com/cdn/shop/articles/FloralTea-blog-sante-The-vert-Jasmin_1600x.webp?v=1761253981",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Pot",
+            "Medium Pot",
+            "Large Pot"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Brew Strength": {
+          "options": [
+            "Delicate",
+            "Medium",
+            "Strong"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Temperature": {
+          "options": [
+            "160°F",
+            "175°F",
+            "185°F"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Jasmine Flowers",
+            "Honey"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Lemon Ginger Tea",
+      "description": "Soothing blend of lemon and fresh ginger.",
+      "basePrice": 100.00,
+      "rating": 4.4,
+      "reviewCount": 79,
+      "image": "https://saberhealth.com/wp-content/uploads/2024/11/lemon-ginger-tea.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Cup",
+            "Large Mug"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Ginger Level": {
+          "options": [
+            "Light Ginger",
+            "Medium Ginger",
+            "Extra Ginger"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        },
+        "Lemon": {
+          "options": [
+            "No Lemon",
+            "1 Lemon Slice",
+            "2 Lemon Slices"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Honey",
+            "Sugar"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Peppermint Tea",
+      "description": "Refreshing pure peppermint herbal tea.",
+      "basePrice": 100.00,
+      "rating": 4.4,
+      "reviewCount": 116,
+      "image": "https://cdn.jwplayer.com/v2/media/6VgN95uD/poster.jpg?width=720",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Cup",
+            "Large Mug"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Mint Strength": {
+          "options": [
+            "Light Mint",
+            "Regular Mint",
+            "Strong Mint"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light Sweet",
+            "Regular Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Fresh Mint",
+            "Honey"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Hibiscus Tea",
+      "description": "Tart and floral herbal tea rich in vitamin C.",
+      "basePrice": 100.00,
+      "rating": 4.8,
+      "reviewCount": 147,
+      "image": "https://www.verywellhealth.com/thmb/DcvVcD7_LCAywjrhgNZXUeBZSAE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VWh-GettyImages-1940389117-8ea37f734ef645b3be47ae24b62d1cd0.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small Cup",
+            "Large Mug"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Temperature": {
+          "options": [
+            "Hot",
+            "Iced"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light Sweet",
+            "Regular Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Orange Slice",
+            "Cinnamon Stick"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "TEA",
+      "name": "Milk Tea",
+      "description": "Creamy black tea with milk and sweetness.",
+      "basePrice": 120.00,
+      "rating": 4.7,
+      "reviewCount": 352,
+      "image": "https://images.slurrp.com/prod/recipe_images/transcribe/beverage/Bubble-Milk-Tea.webp?impolicy=slurrp-20210601&width=1200&height=900&q=75",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Condensed Milk"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            20.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "25% Sweet",
+            "50% Sweet",
+            "100% Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Boba Pearls",
+            "Grass Jelly",
+            "Pudding"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            20.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Croissant",
+      "description": "Buttery, flaky French croissant baked fresh daily.",
+      "basePrice": 80.00,
+      "rating": 4.6,
+      "reviewCount": 295,
+      "image": "https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-SM-2363.jpg",
+      "customizations": {
+        "Type": {
+          "options": [
+            "Plain",
+            "Butter",
+            "Almond",
+            "Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            30.00,
+            20.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Spread": {
+          "options": [
+            "None",
+            "Butter",
+            "Jam",
+            "Nutella"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            20.00
+          ]
+        },
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Blueberry Muffin",
+      "description": "Moist muffin bursting with fresh blueberries.",
+      "basePrice": 75.00,
+      "rating": 4.4,
+      "reviewCount": 367,
+      "image": "https://wildernesswife.com/wp-content/uploads/2023/09/jordan_marsh_blueberry_muffin1.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Jumbo"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Butter",
+            "Cream Cheese",
+            "Whipped Cream"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Glaze": {
+          "options": [
+            "None",
+            "Vanilla Glaze",
+            "Lemon Glaze"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Chocolate Chip Cookie",
+      "description": "Classic cookie loaded with chocolate chips.",
+      "basePrice": 50.00,
+      "rating": 4.4,
+      "reviewCount": 352,
+      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&h=300&fit=crop",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            20.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Ice Cream",
+            "Whipped Cream"
+          ],
+          "prices": [
+            0.0,
+            50.00,
+            15.00
+          ]
+        },
+        "Type": {
+          "options": [
+            "Milk Chocolate",
+            "Dark Chocolate",
+            "White Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Cinnamon Roll",
+      "description": "Soft roll with cinnamon swirl and cream cheese frosting.",
+      "basePrice": 90.00,
+      "rating": 4.9,
+      "reviewCount": 357,
+      "image": "https://schoolnightvegan.com/wp-content/uploads/2024/08/vegan-cinnamon-rolls-34.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            40.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Frosting": {
+          "options": [
+            "Cream Cheese",
+            "Vanilla Glaze",
+            "Extra Frosting",
+            "No Frosting"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Raisins",
+            "Walnuts",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Banana Bread",
+      "description": "Moist and flavorful banana bread with walnuts.",
+      "basePrice": 85.00,
+      "rating": 4.5,
+      "reviewCount": 47,
+      "image": "https://allthehealthythings.com/wp-content/uploads/2023/12/Gluten-Free-Brown-Butter-Banana-Bread-5-scaled.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Slice",
+            "Whole Loaf"
+          ],
+          "prices": [
+            0.0,
+            240.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Spread": {
+          "options": [
+            "None",
+            "Butter",
+            "Cream Cheese",
+            "Nutella"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            20.00
+          ]
+        },
+        "Nuts": {
+          "options": [
+            "With Walnuts",
+            "Without Walnuts",
+            "Extra Walnuts"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Almond Danish",
+      "description": "Flaky pastry filled with almond cream.",
+      "basePrice": 80.00,
+      "rating": 4.6,
+      "reviewCount": 224,
+      "image": "https://mmmrecipes.com/wp-content/uploads/2025/08/Almond-Mascarpone-3.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Glaze": {
+          "options": [
+            "None",
+            "Powdered Sugar",
+            "Almond Glaze"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        },
+        "Filling": {
+          "options": [
+            "Almond Cream",
+            "Cheese Filling",
+            "Fruit Filling"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Cheese Danish",
+      "description": "Creamy cheese filling in flaky pastry.",
+      "basePrice": 85.00,
+      "rating": 4.4,
+      "reviewCount": 391,
+      "image": "https://preppykitchen.com/wp-content/uploads/2021/11/Cheese-Danish-Recipe-Card.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Fruit Compote",
+            "Powdered Sugar",
+            "Berry Sauce"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            20.00
+          ]
+        },
+        "Cheese Type": {
+          "options": [
+            "Cream Cheese",
+            "Ricotta",
+            "Mixed Cheese"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Macaron",
+      "description": "Delicate French macaron with various fillings.",
+      "basePrice": 60.00,
+      "rating": 4.4,
+      "reviewCount": 82,
+      "image": "https://homebodyeats.com/wp-content/uploads/2024/03/pastel-macaron-shells.jpg",
+      "customizations": {
+        "Quantity": {
+          "options": [
+            "Single",
+            "Box of 6",
+            "Box of 12"
+          ],
+          "prices": [
+            0.0,
+            300.00,
+            550.00
+          ]
+        },
+        "Flavor": {
+          "options": [
+            "Vanilla",
+            "Chocolate",
+            "Raspberry",
+            "Pistachio",
+            "Salted Caramel"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Filling": {
+          "options": [
+            "Buttercream",
+            "Ganache",
+            "Fruit Jam",
+            "Cream Cheese"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Special": {
+          "options": [
+            "Regular",
+            "Gold Leaf",
+            "Custom Colors"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            60.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Chocolate Donut",
+      "description": "Classic donut with rich chocolate glaze.",
+      "basePrice": 55.00,
+      "rating": 4.8,
+      "reviewCount": 331,
+      "image": "https://images.unsplash.com/photo-1551106652-a5bcf4b29ab6?w=300&h=300&fit=crop",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Jumbo"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Glaze": {
+          "options": [
+            "Chocolate",
+            "Vanilla",
+            "Maple",
+            "Strawberry"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            10.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Sprinkles",
+            "Crushed Nuts",
+            "Coconut Flakes"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            10.00
+          ]
+        },
+        "Filling": {
+          "options": [
+            "None",
+            "Custard",
+            "Raspberry Jam",
+            "Boston Cream"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            15.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "PASTRIES",
+      "name": "Apple Turnover",
+      "description": "Flaky pastry filled with spiced apples.",
+      "basePrice": 75.00,
+      "rating": 4.6,
+      "reviewCount": 156,
+      "image": "https://sallysbakingaddiction.com/wp-content/uploads/2013/09/caramel-apple-turnovers.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            30.00
+          ]
+        },
+        "Warmth": {
+          "options": [
+            "Room Temp",
+            "Warmed"
+          ],
+          "prices": [
+            0.0,
+            0.0
+          ]
+        },
+        "Glaze": {
+          "options": [
+            "None",
+            "Vanilla Glaze",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            20.00
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Ice Cream",
+            "Whipped Cream"
+          ],
+          "prices": [
+            0.0,
+            50.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Iced Mocha Frappe",
+      "description": "Blended ice coffee with chocolate and whipped cream.",
+      "basePrice": 180.00,
+      "rating": 4.8,
+      "reviewCount": 186,
+      "image": "https://coffeeclub.com.au/cdn/shop/files/Beverages_Product_Images_1200x1200_MochaFrappe.jpg?v=1716268834",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Whipped Cream",
+            "Chocolate Drizzle",
+            "Caramel Drizzle",
+            "Chocolate Chips"
+          ],
+          "prices": [
+            15.00,
+            10.00,
+            10.00,
+            15.00
+          ]
+        },
+        "Ice Level": {
+          "options": [
+            "Regular",
+            "Light Ice",
+            "Extra Ice"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Chocolate Type": {
+          "options": [
+            "Milk Chocolate",
+            "Dark Chocolate",
+            "White Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Caramel Macchiato",
+      "description": "Layered espresso with vanilla syrup, milk, and caramel drizzle.",
+      "basePrice": 170.00,
+      "rating": 4.4,
+      "reviewCount": 86,
+      "image": "https://fedandfit.com/wp-content/uploads/2022/02/caramel-macchiato-creamer-09.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (8oz)",
+            "Medium (12oz)",
+            "Large (16oz)"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Soy Milk"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Caramel Level": {
+          "options": [
+            "Light Drizzle",
+            "Regular",
+            "Extra Caramel"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            20.00
+          ]
+        },
+        "Temperature": {
+          "options": [
+            "Hot",
+            "Iced",
+            "Blended"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            30.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Cookies and Cream Frappe",
+      "description": "Creamy blended drink with cookie pieces and chocolate.",
+      "basePrice": 180.00,
+      "rating": 4.5,
+      "reviewCount": 34,
+      "image": "https://i.pinimg.com/736x/2e/60/b6/2e60b692f663993df21673a450fe290c.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Cookie Type": {
+          "options": [
+            "Oreo",
+            "Chocolate Chip",
+            "Double Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Whipped Cream",
+            "Cookie Crumbs",
+            "Chocolate Sauce",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            15.00,
+            10.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Cream Level": {
+          "options": [
+            "Regular",
+            "Extra Creamy",
+            "Light Cream"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Strawberry Smoothie",
+      "description": "Refreshing blend of fresh strawberries and yogurt.",
+      "basePrice": 160.00,
+      "rating": 4.7,
+      "reviewCount": 297,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxQVLxSMgn3Z12Wb7EsEz7KaJeg71TGI_uw&s",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Yogurt Type": {
+          "options": [
+            "Greek Yogurt",
+            "Regular Yogurt",
+            "Dairy-Free Yogurt"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "No Added Sugar",
+            "Light Sweet",
+            "Regular Sweet",
+            "Extra Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Protein Powder",
+            "Chia Seeds",
+            "Spinach"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            15.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Chocolate Milkshake",
+      "description": "Creamy chocolate milkshake made with premium ice cream.",
+      "basePrice": 170.00,
+      "rating": 4.5,
+      "reviewCount": 59,
+      "image": "https://cookilicious.com/wp-content/uploads/2025/01/Brownie-Milkshake-Recipe-20-scaled.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Ice Cream": {
+          "options": [
+            "Vanilla Base",
+            "Chocolate Base",
+            "Mint Chocolate Chip"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Whipped Cream",
+            "Chocolate Shavings",
+            "Cherry",
+            "Sprinkles"
+          ],
+          "prices": [
+            15.00,
+            15.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Chocolate Type": {
+          "options": [
+            "Milk Chocolate",
+            "Dark Chocolate",
+            "White Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Mango Refresher",
+      "description": "Tropical mango beverage with hints of citrus.",
+      "basePrice": 140.00,
+      "rating": 4.6,
+      "reviewCount": 114,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRniCReJZ7q-oETwl4HnTwQFVEB1cRGM0VCkw&s",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Ice Level": {
+          "options": [
+            "Light Ice",
+            "Regular Ice",
+            "Extra Ice"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Sweetness": {
+          "options": [
+            "Unsweetened",
+            "Light Sweet",
+            "Regular",
+            "Extra Sweet"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Tapioca Pearls",
+            "Coconut Jelly",
+            "Fresh Mango"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            20.00,
+            30.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Tropical Sunrise",
+      "description": "Vibrant blend of tropical fruits and citrus.",
+      "basePrice": 150.00,
+      "rating": 4.4,
+      "reviewCount": 99,
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2018/04/tequila-sunrise-18167a1.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Fruit Blend": {
+          "options": [
+            "Pineapple-Mango",
+            "Passion Fruit-Guava",
+            "Tropical Mix"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00
+          ]
+        },
+        "Carbonation": {
+          "options": [
+            "Still",
+            "Sparkling"
+          ],
+          "prices": [
+            0.0,
+            20.00
+          ]
+        },
+        "Garnish": {
+          "options": [
+            "None",
+            "Orange Slice",
+            "Pineapple Wedge",
+            "Umbrella"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Iced Caramel Latte",
+      "description": "Chilled espresso with caramel and milk over ice.",
+      "basePrice": 170.00,
+      "rating": 4.3,
+      "reviewCount": 125,
+      "image": "https://www.mygingergarlickitchen.com/wp-content/uploads/2024/05/iced-caramel-latte-recipe-2.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Milk Type": {
+          "options": [
+            "Whole Milk",
+            "Oat Milk",
+            "Almond Milk",
+            "Coconut Milk"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Caramel Level": {
+          "options": [
+            "Light",
+            "Regular",
+            "Extra Caramel"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            20.00
+          ]
+        },
+        "Ice Level": {
+          "options": [
+            "Light Ice",
+            "Regular Ice",
+            "Extra Ice"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Nutella Frappe",
+      "description": "Creamy blended drink with rich Nutella flavor.",
+      "basePrice": 190.00,
+      "rating": 4.4,
+      "reviewCount": 196,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSgNAJBxwhcmHFeYnmJvCfJeCJyJYgcwRZwQ&s",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Whipped Cream",
+            "Hazelnuts",
+            "Chocolate Drizzle",
+            "Crushed Cookies"
+          ],
+          "prices": [
+            15.00,
+            15.00,
+            15.00,
+            15.00
+          ]
+        },
+        "Nutella Level": {
+          "options": [
+            "Light",
+            "Regular",
+            "Extra Nutella"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            30.00
+          ]
+        },
+        "Blend Type": {
+          "options": [
+            "Smooth",
+            "Chunky",
+            "Frozen Yogurt"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SPECIAL DRINKS",
+      "name": "Coffee Float",
+      "description": "Cold brew coffee with a scoop of vanilla ice cream.",
+      "basePrice": 160.00,
+      "rating": 4.4,
+      "reviewCount": 309,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRflJh52bn7cqTfocq5h1XH4djdYLYgS4n9w&s",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small (12oz)",
+            "Medium (16oz)",
+            "Large (20oz)"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            60.00
+          ]
+        },
+        "Ice Cream": {
+          "options": [
+            "Vanilla",
+            "Chocolate",
+            "Coffee",
+            "Salted Caramel"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            20.00
+          ]
+        },
+        "Coffee Type": {
+          "options": [
+            "Cold Brew",
+            "Iced Coffee",
+            "Espresso Shot"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            30.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Whipped Cream",
+            "Chocolate Sauce",
+            "Caramel Drizzle"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            15.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Pancakes",
+      "description": "Fluffy buttermilk pancakes served with maple syrup.",
+      "basePrice": 180.00,
+      "rating": 4.8,
+      "reviewCount": 151,
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=300&fit=crop",
+      "customizations": {
+        "Portion": {
+          "options": [
+            "Short Stack (2)",
+            "Full Stack (4)",
+            "Tall Stack (6)"
+          ],
+          "prices": [
+            0.0,
+            60.00,
+            100.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Butter & Syrup",
+            "Mixed Berries",
+            "Bananas",
+            "Chocolate Chips"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            30.00,
+            30.00
+          ]
+        },
+        "Syrup Type": {
+          "options": [
+            "Maple",
+            "Berry",
+            "Chocolate",
+            "Sugar-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            10.00
+          ]
+        },
+        "Batter": {
+          "options": [
+            "Buttermilk",
+            "Whole Wheat",
+            "Gluten-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            30.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Avocado Toast",
+      "description": "Smashed avocado on artisan bread with seasonings.",
+      "basePrice": 160.00,
+      "rating": 4.4,
+      "reviewCount": 249,
+      "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=300&h=300&fit=crop",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Sourdough",
+            "Whole Grain",
+            "Multigrain",
+            "Gluten-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            30.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "None",
+            "Poached Egg",
+            "Cherry Tomatoes",
+            "Microgreens",
+            "Everything Bagel Seasoning"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            30.00,
+            20.00,
+            10.00
+          ]
+        },
+        "Spice Level": {
+          "options": [
+            "Mild",
+            "Medium",
+            "Spicy",
+            "Extra Spicy"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            15.00
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Bacon",
+            "Smoked Salmon",
+            "Feta Cheese"
+          ],
+          "prices": [
+            0.0,
+            50.00,
+            80.00,
+            30.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Omelette",
+      "description": "Fluffy three-egg omelette with your choice of fillings.",
+      "basePrice": 180.00,
+      "rating": 4.7,
+      "reviewCount": 84,
+      "image": "https://www.healthyfood.com/wp-content/uploads/2018/02/Basic-omelette.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "2-Egg",
+            "3-Egg",
+            "4-Egg"
+          ],
+          "prices": [
+            -20.00,
+            0.0,
+            30.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "None",
+            "Cheddar",
+            "Swiss",
+            "Feta",
+            "Goat Cheese"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            20.00,
+            30.00,
+            40.00
+          ]
+        },
+        "Vegetables": {
+          "options": [
+            "Mushrooms",
+            "Bell Peppers",
+            "Onions",
+            "Spinach",
+            "Tomatoes"
+          ],
+          "prices": [
+            20.00,
+            20.00,
+            10.00,
+            20.00,
+            20.00
+          ]
+        },
+        "Meat": {
+          "options": [
+            "None",
+            "Ham",
+            "Bacon",
+            "Sausage",
+            "Turkey"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            50.00,
+            40.00,
+            40.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "French Toast",
+      "description": "Thick-cut brioche dipped in cinnamon batter.",
+      "basePrice": 190.00,
+      "rating": 4.4,
+      "reviewCount": 289,
+      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=300&h=300&fit=crop",
+      "customizations": {
+        "Portion": {
+          "options": [
+            "2 Slices",
+            "3 Slices",
+            "4 Slices"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            80.00
+          ]
+        },
+        "Bread": {
+          "options": [
+            "Brioche",
+            "Challah",
+            "Sourdough",
+            "Whole Wheat"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Maple Syrup",
+            "Berry Compote",
+            "Caramelized Bananas",
+            "Nutella"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            40.00,
+            30.00
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Whipped Cream",
+            "Powdered Sugar",
+            "Cinnamon"
+          ],
+          "prices": [
+            0.0,
+            15.00,
+            10.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Breakfast Burrito",
+      "description": "Scrambled eggs, cheese, and potatoes wrapped in tortilla.",
+      "basePrice": 160.00,
+      "rating": 4.8,
+      "reviewCount": 303,
+      "image": "https://thehealthfulideas.com/wp-content/uploads/2023/08/Breakfast-Burritos-with-Potatoes-SQUARE.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            0.0,
+            40.00
+          ]
+        },
+        "Tortilla": {
+          "options": [
+            "Flour",
+            "Whole Wheat",
+            "Spinach",
+            "Gluten-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            30.00
+          ]
+        },
+        "Protein": {
+          "options": [
+            "None",
+            "Bacon",
+            "Sausage",
+            "Ham",
+            "Vegetarian"
+          ],
+          "prices": [
+            0.0,
+            50.00,
+            40.00,
+            40.00,
+            0.0
+          ]
+        },
+        "Sauce": {
+          "options": [
+            "None",
+            "Salsa",
+            "Hot Sauce",
+            "Sour Cream",
+            "Guacamole"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            15.00,
+            30.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Eggs Benedict",
+      "description": "Poached eggs on English muffin with hollandaise sauce.",
+      "basePrice": 220.00,
+      "rating": 4.6,
+      "reviewCount": 94,
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/04/eggs-benedict.jpg",
+      "customizations": {
+        "Style": {
+          "options": [
+            "Classic",
+            "Florentine",
+            "Royale",
+            "California"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            60.00,
+            40.00
+          ]
+        },
+        "Egg Doneness": {
+          "options": [
+            "Soft Poached",
+            "Medium Poached",
+            "Hard Poached"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Sauce": {
+          "options": [
+            "Traditional Hollandaise",
+            "Béarnaise",
+            "Light Hollandaise"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            0.0
+          ]
+        },
+        "Side": {
+          "options": [
+            "Home Fries",
+            "Fresh Fruit",
+            "Mixed Greens"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Breakfast Sandwich",
+      "description": "Egg, cheese, and protein on your choice of bread.",
+      "basePrice": 150.00,
+      "rating": 4.6,
+      "reviewCount": 87,
+      "image": "https://www.foodandwine.com/thmb/B7zho98HI-IhLryHvFA6Rue_J9o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Breakfast-Sandwiches-FT-RECIPE0224-a18bdbdc16a54af481826c5bb471d1a1.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "English Muffin",
+            "Croissant",
+            "Brioche",
+            "Bagel"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            30.00,
+            20.00
+          ]
+        },
+        "Protein": {
+          "options": [
+            "None",
+            "Bacon",
+            "Sausage",
+            "Ham",
+            "Turkey"
+          ],
+          "prices": [
+            0.0,
+            50.00,
+            40.00,
+            30.00,
+            40.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "None",
+            "American",
+            "Cheddar",
+            "Swiss",
+            "Pepper Jack"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            20.00,
+            20.00,
+            20.00
+          ]
+        },
+        "Extras": {
+          "options": [
+            "None",
+            "Avocado",
+            "Tomato",
+            "Caramelized Onions"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            15.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Granola Bowl",
+      "description": "House-made granola with yogurt and fresh fruits.",
+      "basePrice": 140.00,
+      "rating": 4.7,
+      "reviewCount": 103,
+      "image": "https://mycasualpantry.com/wp-content/uploads/2022/07/Greek-Yogurt-with-Granola-and-Fruit-in-a-bowl-close-up.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small",
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            -20.00,
+            0.0,
+            30.00
+          ]
+        },
+        "Yogurt": {
+          "options": [
+            "Greek Yogurt",
+            "Regular Yogurt",
+            "Dairy-Free Yogurt"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00
+          ]
+        },
+        "Fruits": {
+          "options": [
+            "Mixed Berries",
+            "Tropical Mix",
+            "Apple Cinnamon",
+            "Peach Melba"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            20.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Honey",
+            "Maple Syrup",
+            "Chia Seeds",
+            "Toasted Coconut"
+          ],
+          "prices": [
+            10.00,
+            10.00,
+            15.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Fruit Parfait",
+      "description": "Layers of yogurt, granola, and seasonal fruits.",
+      "basePrice": 150.00,
+      "rating": 4.7,
+      "reviewCount": 119,
+      "image": "https://feelgoodfoodie.net/wp-content/uploads/2024/11/Fruit-Yogurt-Parfait-11.jpg",
+      "customizations": {
+        "Size": {
+          "options": [
+            "Small",
+            "Regular",
+            "Large"
+          ],
+          "prices": [
+            -20.00,
+            0.0,
+            30.00
+          ]
+        },
+        "Yogurt Base": {
+          "options": [
+            "Vanilla Yogurt",
+            "Plain Yogurt",
+            "Coconut Yogurt"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            15.00
+          ]
+        },
+        "Fruit Selection": {
+          "options": [
+            "Mixed Berries",
+            "Tropical Fruits",
+            "Stone Fruits",
+            "Apple Cinnamon"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            20.00,
+            10.00
+          ]
+        },
+        "Granola Type": {
+          "options": [
+            "Classic",
+            "Nutty",
+            "Cinnamon",
+            "Chocolate"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "BREAKFAST",
+      "name": "Waffles",
+      "description": "Crispy Belgian waffles with your choice of toppings.",
+      "basePrice": 180.00,
+      "rating": 4.6,
+      "reviewCount": 340,
+      "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=300&h=300&fit=crop",
+      "customizations": {
+        "Portion": {
+          "options": [
+            "Single Waffle",
+            "Double Waffle"
+          ],
+          "prices": [
+            0.0,
+            60.00
+          ]
+        },
+        "Waffle Type": {
+          "options": [
+            "Belgian",
+            "Classic",
+            "Chocolate",
+            "Whole Grain"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            20.00,
+            10.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Butter & Syrup",
+            "Fresh Berries",
+            "Bananas & Nutella",
+            "Fried Chicken"
+          ],
+          "prices": [
+            0.0,
+            40.00,
+            50.00,
+            100.00
+          ]
+        },
+        "Syrup": {
+          "options": [
+            "Maple Syrup",
+            "Berry Syrup",
+            "Chocolate Syrup",
+            "Sugar-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Turkey Club",
+      "description": "Triple-decker sandwich with turkey, bacon, lettuce, and tomato.",
+      "basePrice": 200.00,
+      "rating": 4.6,
+      "reviewCount": 302,
+      "image": "https://www.seriouseats.com/thmb/HliR9y_Dqf3zbBR86k9Aie2uEnM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20231204-SEA-TurkeyClub-FredHardy-01-6679650f138a4f419e330a8a0f31576d.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Sourdough",
+            "Whole Wheat",
+            "Multigrain",
+            "Gluten-Free"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            30.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "None",
+            "Cheddar",
+            "Swiss",
+            "Provolone"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            20.00,
+            20.00
+          ]
+        },
+        "Sauce": {
+          "options": [
+            "Mayonnaise",
+            "Mustard",
+            "Chipotle Mayo",
+            "Ranch"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            10.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Lettuce & Tomato",
+            "Avocado",
+            "Pickles",
+            "Red Onion"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            10.00,
+            10.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Grilled Cheese",
+      "description": "Melted cheese between buttery grilled bread.",
+      "basePrice": 150.00,
+      "rating": 4.7,
+      "reviewCount": 38,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=300&h=300&fit=crop",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Sourdough",
+            "Brioche",
+            "Rye",
+            "Texas Toast"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Cheese Blend": {
+          "options": [
+            "American",
+            "Cheddar & Swiss",
+            "Three Cheese",
+            "Gourmet Blend"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            30.00,
+            40.00
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Tomato",
+            "Bacon",
+            "Ham",
+            "Caramelized Onions"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            50.00,
+            40.00,
+            30.00
+          ]
+        },
+        "Side": {
+          "options": [
+            "None",
+            "Tomato Soup",
+            "French Fries",
+            "Side Salad"
+          ],
+          "prices": [
+            0.0,
+            60.00,
+            50.00,
+            40.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Ham and Cheese",
+      "description": "Classic combination of ham and melted cheese.",
+      "basePrice": 160.00,
+      "rating": 4.6,
+      "reviewCount": 358,
+      "image": "https://www.momables.com/wp-content/uploads/2024/03/Grilled-ham-cheese_RC.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "White",
+            "Wheat",
+            "Croissant",
+            "Ciabatta"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            30.00,
+            20.00
+          ]
+        },
+        "Ham Type": {
+          "options": [
+            "Black Forest",
+            "Honey Ham",
+            "Virginia Ham",
+            "Smoked Ham"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "Swiss",
+            "Cheddar",
+            "Provolone",
+            "Pepper Jack"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Preparation": {
+          "options": [
+            "Cold",
+            "Toasted",
+            "Grilled"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Chicken Pesto",
+      "description": "Grilled chicken with basil pesto and fresh mozzarella.",
+      "basePrice": 220.00,
+      "rating": 4.6,
+      "reviewCount": 39,
+      "image": "https://therecipecritic.com/wp-content/uploads/2023/02/chickenpestopasta-1.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Ciabatta",
+            "Focaccia",
+            "Sourdough",
+            "Wrap"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Chicken": {
+          "options": [
+            "Grilled",
+            "Rotisserie",
+            "Fried",
+            "Vegetarian"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            40.00,
+            0.0
+          ]
+        },
+        "Pesto Type": {
+          "options": [
+            "Basil Pesto",
+            "Sun-Dried Tomato",
+            "Spinach Pesto"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00
+          ]
+        },
+        "Vegetables": {
+          "options": [
+            "Lettuce & Tomato",
+            "Roasted Peppers",
+            "Spinach",
+            "Arugula"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            15.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Tuna Melt",
+      "description": "Creamy tuna salad with melted cheese on toast.",
+      "basePrice": 180.00,
+      "rating": 4.9,
+      "reviewCount": 318,
+      "image": "https://assets.bonappetit.com/photos/6411f3b35425c986537f97db/1:1/w_1761,h_1761,c_limit/031423-suhoor-tuna-melt-lede.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Sourdough",
+            "Rye",
+            "Whole Wheat",
+            "English Muffin"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            0.0,
+            10.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "Cheddar",
+            "Swiss",
+            "Provolone",
+            "Pepper Jack"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Tuna Style": {
+          "options": [
+            "Classic",
+            "Spicy",
+            "Mediterranean",
+            "Light Mayo"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00,
+            0.0
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Pickles",
+            "Tomato",
+            "Bacon"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            50.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "BLT Sandwich",
+      "description": "Crispy bacon, lettuce, and tomato with mayo.",
+      "basePrice": 170.00,
+      "rating": 4.9,
+      "reviewCount": 162,
+      "image": "https://dyvn6jpt1f0d3.cloudfront.net/wp-content/uploads/2023/10/14154227/BLT-for-recipe-1-6-1200x675.jpeg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "White",
+            "Wheat",
+            "Sourdough",
+            "Texas Toast"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            10.00,
+            10.00
+          ]
+        },
+        "Bacon": {
+          "options": [
+            "Regular Bacon",
+            "Turkey Bacon",
+            "Extra Crispy",
+            "Canadian Bacon"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            20.00
+          ]
+        },
+        "Sauce": {
+          "options": [
+            "Mayonnaise",
+            "Garlic Aioli",
+            "Chipotle Mayo",
+            "Avocado Spread"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            20.00
+          ]
+        },
+        "Add-ons": {
+          "options": [
+            "None",
+            "Avocado",
+            "Egg",
+            "Cheese"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            30.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Egg Salad Sandwich",
+      "description": "Creamy egg salad with fresh herbs and seasonings.",
+      "basePrice": 150.00,
+      "rating": 4.8,
+      "reviewCount": 222,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8IE9U4DqQhLGbPM0LSR0LYLqDpxRDCwl0g&s",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "White",
+            "Wheat",
+            "Croissant",
+            "Lettuce Wrap"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            30.00,
+            0.0
+          ]
+        },
+        "Egg Style": {
+          "options": [
+            "Classic",
+            "Curried",
+            "Dill & Chive",
+            "Bacon & Chive"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            30.00
+          ]
+        },
+        "Vegetables": {
+          "options": [
+            "Lettuce & Tomato",
+            "Spinach",
+            "Arugula",
+            "Cucumber"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            15.00,
+            10.00
+          ]
+        },
+        "Preparation": {
+          "options": [
+            "Cold",
+            "Toasted",
+            "Grilled"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Veggie Sandwich",
+      "description": "Fresh vegetables and hummus on artisan bread.",
+      "basePrice": 160.00,
+      "rating": 4.5,
+      "reviewCount": 206,
+      "image": "https://www.themediterraneandish.com/wp-content/uploads/2024/03/TMD-Vegetable-Sandwich-Leads-02-Horizontal.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Multigrain",
+            "Sourdough",
+            "Wrap",
+            "Gluten-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            30.00
+          ]
+        },
+        "Spread": {
+          "options": [
+            "Hummus",
+            "Avocado",
+            "Cream Cheese",
+            "Pesto"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            20.00,
+            20.00
+          ]
+        },
+        "Vegetables": {
+          "options": [
+            "Cucumber & Tomato",
+            "Roasted Vegetables",
+            "Fresh Greens",
+            "Mediterranean Mix"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            10.00,
+            40.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "None",
+            "Feta",
+            "Mozzarella",
+            "Provolone"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            20.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Roast Beef Sandwich",
+      "description": "Thinly sliced roast beef with horseradish sauce.",
+      "basePrice": 220.00,
+      "rating": 4.4,
+      "reviewCount": 377,
+      "image": "https://www.billyparisi.com/wp-content/uploads/2018/05/roast-beef-sammy-1-500x375.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Kaiser Roll",
+            "Ciabatta",
+            "Rye",
+            "Baguette"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            20.00
+          ]
+        },
+        "Beef": {
+          "options": [
+            "Rare",
+            "Medium Rare",
+            "Medium",
+            "Well Done"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "Sauce": {
+          "options": [
+            "Horseradish",
+            "Au Jus",
+            "Mayonnaise",
+            "Mustard"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            0.0,
+            0.0
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Lettuce & Tomato",
+            "Caramelized Onions",
+            "Mushrooms",
+            "Provolone Cheese"
+          ],
+          "prices": [
+            0.0,
+            30.00,
+            30.00,
+            20.00
+          ]
+        }
+      }
+    },
+    {
+      "category": "SANDWICHES",
+      "name": "Philly Cheesesteak",
+      "description": "Thinly sliced steak with melted cheese and onions.",
+      "basePrice": 250.00,
+      "rating": 4.8,
+      "reviewCount": 157,
+      "image": "https://static01.nyt.com/images/2024/02/06/multimedia/KD-philly-cheesesteak-mhqc/KD-philly-cheesesteak-mhqc-threeByTwoLargeAt2X.jpg",
+      "customizations": {
+        "Bread": {
+          "options": [
+            "Hoagie Roll",
+            "Italian Roll",
+            "Wrap",
+            "Gluten-Free"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            30.00
+          ]
+        },
+        "Cheese": {
+          "options": [
+            "Provolone",
+            "American",
+            "Cheez Whiz",
+            "Pepper Jack"
+          ],
+          "prices": [
+            0.0,
+            10.00,
+            10.00,
+            10.00
+          ]
+        },
+        "Toppings": {
+          "options": [
+            "Onions & Peppers",
+            "Mushrooms",
+            "Hot Peppers",
+            "Extra Meat"
+          ],
+          "prices": [
+            0.0,
+            20.00,
+            10.00,
+            60.00
+          ]
+        },
+        "Sauce": {
+          "options": [
+            "None",
+            "Mayo",
+            "Ketchup",
+            "Hot Sauce"
+          ],
+          "prices": [
+            0.0,
+            0.0,
+            0.0,
+            10.00
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lazzy Latte — Login / Signup</title>
+  <!-- Fixed Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ====== Animated sliding UI CSS (kept from your design) ====== */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body,
+    input {
+      font-family: "Poppins", sans-serif
+    }
+
+    /* Add background image to the entire page */
+    body {
+      background-image: url('img/beans.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background-color: rgba(255, 255, 255, 0.752);
+      /* Semi-transparent white overlay */
+      overflow: hidden;
+      backdrop-filter: blur(2px);
+      /* Slight blur effect for the background */
+    }
+
+    .forms-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0
+    }
+
+    .signin-signup {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      transition: 1s .7s ease-in-out;
+      display: grid;
+      grid-template-columns: 1fr;
+      z-index: 5
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 5rem;
+      transition: all .2s .7s;
+      overflow: hidden;
+      grid-column: 1/2;
+      grid-row: 1/2
+    }
+
+    form.sign-up-form {
+      opacity: 0;
+      z-index: 1
+    }
+
+    form.sign-in-form {
+      z-index: 2
+    }
+
+    .title {
+      font-size: 2.2rem;
+      color: #444;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center
+    }
+
+    .title img {
+      height: 2.2rem;
+      width: auto;
+      object-fit: contain
+    }
+
+    .input-field {
+      max-width: 380px;
+      width: 100%;
+      background: #f0f0f0;
+      margin: 10px 0;
+      height: 55px;
+      border-radius: 55px;
+      display: grid;
+      grid-template-columns: 15% 85%;
+      padding: 0 .4rem;
+      position: relative
+    }
+
+    .input-field i {
+      line-height: 55px;
+      color: #acacac;
+      transition: .5s;
+      font-size: 1.1rem;
+      text-align: center
+    }
+
+    .input-field input {
+      background: none;
+      outline: none;
+      border: none;
+      line-height: 1;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333
+    }
+
+    .input-field input::placeholder {
+      color: #aaa;
+      font-weight: 500
+    }
+
+    .social-text {
+      padding: .7rem 0;
+      font-size: 1rem
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center
+    }
+
+    .social-icon {
+      height: 46px;
+      width: 46px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 .45rem;
+      color: #333;
+      border-radius: 50%;
+      border: 1px solid #333;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: .3s
+    }
+
+    .social-icon:hover {
+      color: #ff0000;
+      border-color: #eb4444
+    }
+
+    .btn {
+      width: 150px;
+      background: #ff0000;
+      border: none;
+      outline: none;
+      height: 49px;
+      border-radius: 49px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: .5s
+    }
+
+    .btn:hover {
+      background: #ff0000
+    }
+
+    .panels-container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .container:before {
+      content: "";
+      position: absolute;
+      height: 2000px;
+      width: 2000px;
+      top: -10%;
+      right: 48%;
+      transform: translateY(-50%);
+      background-image: linear-gradient(-45deg, #ff0000 0%, #100f0f 100%);
+      transition: 1.8s ease-in-out;
+      border-radius: 50%;
+      z-index: 6
+    }
+
+    .image {
+      width: 100%;
+      transition: transform 1.1s ease-in-out;
+      transition-delay: .4s
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      text-align: center;
+      z-index: 6
+    }
+
+    .left-panel {
+      pointer-events: all;
+      padding: 3rem 17% 2rem 12%
+    }
+
+    .right-panel {
+      pointer-events: none;
+      padding: 3rem 12% 2rem 17%
+    }
+
+    .panel .content {
+      color: #fff;
+      transition: transform .9s ease-in-out;
+      transition-delay: .6s
+    }
+
+    .panel h3 {
+      font-weight: 600;
+      line-height: 1;
+      font-size: 1.5rem
+    }
+
+    .panel p {
+      font-size: .95rem;
+      padding: .7rem 0
+    }
+
+    .btn.transparent {
+      margin: 0;
+      background: none;
+      border: 2px solid #fff;
+      width: 130px;
+      height: 41px;
+      font-weight: 600;
+      font-size: .8rem
+    }
+
+    .right-panel .image,
+    .right-panel .content {
+      transform: translateX(800px)
+    }
+
+    .container.sign-up-mode:before {
+      transform: translate(100%, -50%);
+      right: 52%
+    }
+
+    .container.sign-up-mode .left-panel .image,
+    .container.sign-up-mode .left-panel .content {
+      transform: translateX(-800px)
+    }
+
+    .container.sign-up-mode .signin-signup {
+      left: 25%
+    }
+
+    .container.sign-up-mode form.sign-up-form {
+      opacity: 1;
+      z-index: 2
+    }
+
+    .container.sign-up-mode form.sign-in-form {
+      opacity: 0;
+      z-index: 1
+    }
+
+    .container.sign-up-mode .right-panel .image,
+    .container.sign-up-mode .right-panel .content {
+      transform: translateX(0%)
+    }
+
+    .container.sign-up-mode .left-panel {
+      pointer-events: none
+    }
+
+    .container.sign-up-mode .right-panel {
+      pointer-events: all
+    }
+
+    @media (max-width:870px) {
+      .container {
+        min-height: 935px;
+        height: 100vh
+      }
+
+      .signin-signup {
+        width: 100%;
+        top: 95%;
+        transform: translate(-50%, -100%)
+      }
+
+      .signin-signup,
+      .container.sign-up-mode .signin-signup {
+        left: 50%
+      }
+
+      .panels-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr
+      }
+
+      .panel {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5rem 8%;
+        grid-column: 1/2
+      }
+
+      .right-panel {
+        grid-row: 3/4
+      }
+
+      .left-panel {
+        grid-row: 1/2
+      }
+
+      .image {
+        width: 200px;
+        transition: transform .9s ease-in-out;
+        transition-delay: .6s
+      }
+
+      .panel .content {
+        padding-right: 15%;
+        transition: transform .9s ease-in-out;
+        transition-delay: .8s
+      }
+
+      .panel h3 {
+        font-size: 1.2rem
+      }
+
+      .panel p {
+        font-size: .7rem;
+        padding: .5rem 0
+      }
+
+      .btn.transparent {
+        width: 110px;
+        height: 35px;
+        font-size: .7rem
+      }
+
+      .container:before {
+        width: 1500px;
+        height: 1500px;
+        transform: translateX(-50%);
+        left: 30%;
+        bottom: 68%;
+        right: initial;
+        top: initial;
+        transition: 2s ease-in-out
+      }
+
+      .container.sign-up-mode:before {
+        transform: translate(-50%, 100%);
+        bottom: 32%;
+        right: initial
+      }
+
+      .container.sign-up-mode .left-panel .image,
+      .container.sign-up-mode .left-panel .content {
+        transform: translateY(-300px)
+      }
+
+      .container.sign-up-mode .right-panel .image,
+      .container.sign-up-mode .right-panel .content {
+        transform: translateY(0px)
+      }
+
+      .right-panel .image,
+      .right-panel .content {
+        transform: translateY(300px)
+      }
+
+      .container.sign-up-mode .signin-signup {
+        top: 5%;
+        transform: translate(-50%, 0)
+      }
+    }
+
+    @media (max-width:570px) {
+      form {
+        padding: 0 1.5rem
+      }
+
+      .image {
+        display: none
+      }
+
+      .panel .content {
+        padding: .5rem 1rem
+      }
+
+      .container {
+        padding: 1.5rem
+      }
+
+      .container:before {
+        bottom: 72%;
+        left: 50%
+      }
+
+      .container.sign-up-mode:before {
+        bottom: 28%;
+        left: 50%
+      }
+    }
+
+    /* ====== small additions for auth UI messages (error/success) ====== */
+    .auth-form .error-message {
+      color: #ff3b3b;
+      font-size: 12px;
+      margin-top: 6px;
+      display: none
+    }
+
+    .auth-form .success-message {
+      color: #28a745;
+      font-size: 14px;
+      margin-top: 8px;
+      display: none
+    }
+
+    .auth-tab {
+      display: none
+    }
+
+    /* hide original tabs if present */
+
+    /* Ensure social icons are visible */
+    .fa-google,
+    .fa-facebook-f {
+      font-size: 1.1rem;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-btn:hover .fa-google,
+    .social-btn:hover .fa-facebook-f {
+      color: #ff0000;
+    }
+
+    /* Loading spinner */
+    .loading-spinner {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #f3f3f3;
+      border-top: 2px solid #ff0000;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-left: 10px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .google-signin-btn {
+      cursor: pointer;
+      border: solid 0px #ffffff00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      transition: all 0.3s ease;
+      width: 200px;
+      margin: 5px 0;
+    }
+
+    .google-signin-btn:hover {
+      background: #f8f8f8;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .google-signin-btn img {
+      width: 18px;
+      height: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="forms-container">
+      <div class="signin-signup">
+
+        <!-- SIGN IN FORM (must have ids used by auth.js) -->
+        <form id="login-form" class="sign-in-form">
+          <h2 class="title">
+            <img src="img/logo.png" alt="Lazzy Latte Logo" />
+            Welcome Back
+          </h2>
+
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input id="login-email" type="email" placeholder="Email" required />
+          </div>
+          <div class="error-message" id="login-email-error"></div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="login-password" type="password" placeholder="Password" required />
+          </div>
+          <div class="error-message" id="login-password-error"></div>
+
+          <div class="success-message" id="login-success"></div>
+
+          <input type="submit" value="Login" class="btn solid" />
+
+          <p class="social-text">Or sign in with</p>
+          <div class="social-media">
+
+          </div>
+
+          <div style="height:6px"></div>
+
+          <!-- Google Sign-In Button -->
+          <button type="button" class="google-signin-btn" id="google-signin-full">
+            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
+            Sign in with Google
+          </button>
+
+          <p style="margin-top:10px"><a href="#" id="forgot-password"
+              style="color:#444;text-decoration:underline;">Forgot your password?</a></p>
+        </form>
+
+        <!-- SIGN UP FORM -->
+        <form id="signup-form" class="sign-up-form">
+          <h2 class="title">
+            <img src="img/logo.png" alt="Lazzy Latte Logo" />
+            Join Lazzy Latte
+          </h2>
+
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="signup-name" type="text" placeholder="Full name" required />
+          </div>
+          <div class="error-message" id="signup-name-error"></div>
+
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input id="signup-email" type="email" placeholder="Email" required />
+          </div>
+          <div class="error-message" id="signup-email-error"></div>
+
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input id="signup-phone" type="tel" placeholder="Phone number" required />
+          </div>
+          <div class="error-message" id="signup-phone-error"></div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="signup-password" type="password" placeholder="Password" required />
+          </div>
+          <div class="error-message" id="signup-password-error"></div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="signup-confirm-password" type="password" placeholder="Confirm password" required />
+          </div>
+          <div class="error-message" id="signup-confirm-password-error"></div>
+
+          <div class="success-message" id="signup-success"></div>
+
+          <input type="submit" value="Sign Up" class="btn" />
+
+          <p class="social-text">Or sign up with</p>
+          <div class="social-media">
+
+          </div>
+
+          <div style="height:6px"></div>
+
+          <!-- Google Sign-Up Button -->
+          <button type="button" class="google-signin-btn" id="google-signup-full">
+            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
+            Sign up with Google
+          </button>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- PANELS -->
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New here?</h3>
+          <p>Fuel your lazy cravings — coffee delivered to your door.</p>
+          <button class="btn transparent" id="sign-up-btn">Sign up</button>
+        </div>
+        <img src="img/ppl2.png" class="image" alt="log" />
+      </div>
+
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Already a member?</h3>
+          <p>Your caffeine fix awaits — log in & continue sipping.</p>
+          <button class="btn transparent" id="sign-in-btn">Sign in</button>
+        </div>
+        <img src="img/ppl.png" class="image" alt="register" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <script>
+    /* ====== Sliding panel handlers (UI) ====== */
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const container = document.querySelector(".container");
+    sign_up_btn.addEventListener("click", () => container.classList.add("sign-up-mode"));
+    sign_in_btn.addEventListener("click", () => container.classList.remove("sign-up-mode"));
+
+    // Add this function to handle preloader redirection
+    function redirectWithPreloader(targetUrl) {
+      // For admin and staff, redirect directly without preloader
+      if (targetUrl === 'admin.html' || targetUrl === 'staff.html') {
+        window.location.href = targetUrl;
+      } else {
+        // Store the target URL for the preloader
+        localStorage.setItem('preloaderRedirect', targetUrl);
+        // Redirect to preloader only for regular customers
+        window.location.href = 'preloader.html';
+      }
+    }
+
+    /* ====== Google OAuth Configuration ====== */
+    const GOOGLE_CLIENT_ID = '753221012337-m8lj91n5m597acrhbsavjuugm2euuk6s.apps.googleusercontent.com';
+
+    // Initialize Google OAuth
+    function initializeGoogleAuth() {
+      // Google Sign-In Button for Login
+      google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: handleGoogleSignIn,
+        auto_select: false,
+        cancel_on_tap_outside: true
+      });
+
+      // Render Google Sign-In buttons
+      google.accounts.id.renderButton(
+        document.getElementById('google-signin-full'),
+        {
+          theme: 'outline',
+          size: 'large',
+          width: 200,
+          text: 'signin_with',
+          logo_alignment: 'left'
+        }
+      );
+
+      google.accounts.id.renderButton(
+        document.getElementById('google-signup-full'),
+        {
+          theme: 'outline',
+          size: 'large',
+          width: 200,
+          text: 'signup_with',
+          logo_alignment: 'left'
+        }
+      );
+
+      // Also prompt for one-tap sign-in
+      google.accounts.id.prompt();
+    }
+
+    // Handle Google Sign-In response
+    function handleGoogleSignIn(response) {
+      console.log('Google Sign-In response:', response);
+
+      // Decode the JWT token to get user info
+      const responsePayload = decodeJWTResponse(response.credential);
+      console.log('User info:', responsePayload);
+
+      // Process the Google user
+      processGoogleUser(responsePayload);
+    }
+
+    // Decode JWT token
+    function decodeJWTResponse(token) {
+      const base64Url = token.split('.')[1];
+      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+
+      return JSON.parse(jsonPayload);
+    }
+
+    // Process Google user data
+    function processGoogleUser(userData) {
+      // Show loading state
+      showLoadingState(true);
+
+      // Check if user already exists
+      const existingUser = auth.users.find(u => u.email === userData.email);
+
+      if (existingUser) {
+        // User exists - log them in
+        auth.loginUser(existingUser);
+        showSuccess('login-success', 'Google sign-in successful! Redirecting...');
+
+        // Redirect based on user role with preloader
+        setTimeout(() => {
+          let targetUrl;
+          if (existingUser.email === 'admin@gmail.com') {
+            targetUrl = 'admin.html';
+          } else if (existingUser.email === 'staff@gmail.com') {
+            targetUrl = 'staff.html';
+          } else {
+            targetUrl = 'index.html';
+          }
+
+          redirectWithPreloader(targetUrl);
+        }, 1200);
+      } else {
+        // New user - create account
+        const newUser = {
+          id: Date.now(),
+          name: userData.name,
+          email: userData.email,
+          phone: '', // Google doesn't provide phone
+          password: 'google_oauth', // Special password for OAuth users
+          profile: {
+            picture: userData.picture
+          },
+          createdAt: new Date().toISOString(),
+          role: 'customer',
+          oauthProvider: 'google'
+        };
+
+        auth.users.push(newUser);
+        auth.saveUsers();
+        auth.loginUser(newUser);
+
+        showSuccess('signup-success', 'Google account linked successfully! Redirecting...');
+
+        setTimeout(() => {
+          redirectWithPreloader('index.html');
+        }, 1200);
+      }
+
+      showLoadingState(false);
+    }
+
+    // Show/hide loading state
+    function showLoadingState(show) {
+      const buttons = document.querySelectorAll('.google-signin-btn');
+      buttons.forEach(btn => {
+        if (show) {
+          btn.disabled = true;
+          btn.innerHTML = '<div class="loading-spinner"></div> Signing in...';
+        } else {
+          // Reset button text based on which form we're in
+          const isSignUp = container.classList.contains('sign-up-mode');
+          btn.innerHTML = `
+        <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
+        ${isSignUp ? 'Sign up with Google' : 'Sign in with Google'}
+      `;
+          btn.disabled = false;
+        }
+      });
+    }
+
+    /* ====== Authentication logic ====== */
+    class AuthSystem {
+      constructor() {
+        this.users = this.loadUsers();
+        this.currentUser = this.getCurrentUser();
+        this.init();
+        this.ensureDefaultUsers();
+      }
+
+      ensureDefaultUsers() {
+        // Ensure admin user exists
+        const adminUser = this.users.find(u => u.email === 'admin@gmail.com');
+        if (!adminUser) {
+          this.users.push({
+            id: 1,
+            name: 'Admin User',
+            email: 'admin@gmail.com',
+            phone: '000-000-0000',
+            password: 'admin123',
+            profile: {},
+            createdAt: new Date().toISOString(),
+            role: 'admin'
+          });
+        }
+
+        // Ensure staff user exists
+        const staffUser = this.users.find(u => u.email === 'staff@gmail.com');
+        if (!staffUser) {
+          this.users.push({
+            id: 2,
+            name: 'Staff Member',
+            email: 'staff@gmail.com',
+            phone: '111-111-1111',
+            password: 'lazylattestaff',
+            profile: {},
+            createdAt: new Date().toISOString(),
+            role: 'staff'
+          });
+        }
+
+        // Save if we added any default users
+        if (!adminUser || !staffUser) {
+          this.saveUsers();
+        }
+      }
+
+      init() {
+        this.setupFormSubmissions();
+        this.setupSocialAuth();
+        this.checkExistingAuth();
+      }
+
+      loadUsers() {
+        const stored = localStorage.getItem('lazzyLatteUsers');
+        return stored ? JSON.parse(stored) : [];
+      }
+      saveUsers() { localStorage.setItem('lazzyLatteUsers', JSON.stringify(this.users)); }
+      getCurrentUser() { const stored = localStorage.getItem('lazzyLatteCurrentUser'); return stored ? JSON.parse(stored) : null; }
+
+      setupFormSubmissions() {
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        if (loginForm) loginForm.addEventListener('submit', (e) => { e.preventDefault(); this.handleLogin(); });
+        if (signupForm) signupForm.addEventListener('submit', (e) => { e.preventDefault(); this.handleSignup(); });
+        const forgot = document.getElementById('forgot-password');
+        if (forgot) forgot.addEventListener('click', (e) => { e.preventDefault(); this.handleForgotPassword(); });
+      }
+
+      setupSocialAuth() {
+        // Traditional social buttons (non-Google OAuth)
+        const f = document.querySelectorAll('.social-btn.facebook');
+        f.forEach(btn => btn.addEventListener('click', () => this.socialAuth('facebook')));
+
+        // Google OAuth buttons are handled separately
+        const googleSigninBtn = document.getElementById('google-signin-btn');
+        const googleSignupBtn = document.getElementById('google-signup-btn');
+
+        if (googleSigninBtn) {
+          googleSigninBtn.addEventListener('click', () => {
+            // Trigger Google OAuth flow
+            google.accounts.id.prompt();
+          });
+        }
+
+        if (googleSignupBtn) {
+          googleSignupBtn.addEventListener('click', () => {
+            // Trigger Google OAuth flow
+            google.accounts.id.prompt();
+          });
+        }
+      }
+
+      handleLogin() {
+        const email = document.getElementById('login-email').value.trim();
+        const password = document.getElementById('login-password').value;
+        this.clearErrors('login');
+
+        if (!this.validateEmail(email)) { this.showError('login-email-error', 'Please enter a valid email address'); return; }
+        if (password.length < 6) { this.showError('login-password-error', 'Password must be at least 6 characters'); return; }
+
+        const user = this.users.find(u => u.email === email && u.password === password);
+
+        if (user) {
+          this.loginUser(user);
+          this.showSuccess('login-success', 'Login successful! Redirecting...');
+
+          // Redirect based on user role with preloader
+          setTimeout(() => {
+            let targetUrl;
+            if (user.email === 'admin@gmail.com') {
+              targetUrl = 'admin.html';
+            } else if (user.email === 'staff@gmail.com') {
+              targetUrl = 'staff.html';
+            } else {
+              targetUrl = 'index.html';
+            }
+
+            redirectWithPreloader(targetUrl);
+          }, 1200);
+        } else {
+          this.showError('login-password-error', 'Invalid email or password');
+        }
+      }
+
+      handleSignup() {
+        const name = document.getElementById('signup-name').value.trim();
+        const email = document.getElementById('signup-email').value.trim();
+        const phone = document.getElementById('signup-phone').value.trim();
+        const password = document.getElementById('signup-password').value;
+        const confirmPassword = document.getElementById('signup-confirm-password').value;
+        this.clearErrors('signup');
+
+        let isValid = true;
+        if (name.length < 2) { this.showError('signup-name-error', 'Name must be at least 2 characters'); isValid = false; }
+        if (!this.validateEmail(email)) { this.showError('signup-email-error', 'Please enter a valid email address'); isValid = false; }
+        if (this.users.find(u => u.email === email)) { this.showError('signup-email-error', 'Email already registered'); isValid = false; }
+        if (!this.validatePhone(phone)) { this.showError('signup-phone-error', 'Please enter a valid phone number'); isValid = false; }
+        if (password.length < 6) { this.showError('signup-password-error', 'Password must be at least 6 characters'); isValid = false; }
+        if (password !== confirmPassword) { this.showError('signup-confirm-password-error', 'Passwords do not match'); isValid = false; }
+        if (!isValid) return;
+
+        const newUser = {
+          id: Date.now(),
+          name,
+          email,
+          phone,
+          password,
+          profile: {},
+          createdAt: new Date().toISOString(),
+          role: 'customer'
+        };
+        this.users.push(newUser);
+        this.saveUsers();
+
+        this.showSuccess('signup-success', 'Account created successfully! Redirecting to login...');
+        setTimeout(() => {
+          container.classList.remove('sign-up-mode');
+          document.getElementById('signup-form').reset();
+        }, 1400);
+      }
+
+      loginUser(user) {
+        localStorage.setItem('lazzyLatteCurrentUser', JSON.stringify(user));
+        this.currentUser = user;
+      }
+
+      checkExistingAuth() {
+        if (this.currentUser && window.location.pathname.includes('login-signup.html')) {
+          // Redirect based on user role
+          if (this.currentUser.email === 'admin@gmail.com') {
+            window.location.href = 'admin.html';
+          } else if (this.currentUser.email === 'staff@gmail.com') {
+            window.location.href = 'staff.html';
+          } else {
+            window.location.href = 'index.html';
+          }
+        }
+      }
+
+      validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+
+      validatePhone(phone) {
+        const cleaned = phone.replace(/[\s\-\(\)]/g, '');
+        const re = /^[\+]?[1-9][\d]{0,15}$/;
+        return re.test(cleaned);
+      }
+
+      showError(elementId, message) {
+        const el = document.getElementById(elementId);
+        if (el) { el.textContent = message; el.style.display = 'block'; }
+      }
+      showSuccess(elementId, message) {
+        const el = document.getElementById(elementId);
+        if (el) { el.textContent = message; el.style.display = 'block'; }
+      }
+      clearErrors(formType) {
+        document.querySelectorAll(`#${formType}-form .error-message`).forEach(e => e.style.display = 'none');
+        document.querySelectorAll(`#${formType}-form .success-message`).forEach(e => e.style.display = 'none');
+      }
+
+      handleForgotPassword() {
+        const email = prompt('Please enter your email address:');
+        if (email && this.validateEmail(email)) {
+          const user = this.users.find(u => u.email === email);
+          if (user) alert('Password reset instructions have been (simulated) sent to your email.');
+          else alert('No account found with that email address.');
+        } else if (email) alert('Please enter a valid email address.');
+      }
+
+      socialAuth(provider) {
+        if (provider === 'google') {
+          // Google OAuth is handled separately
+          return;
+        }
+        alert(`${provider[0].toUpperCase() + provider.slice(1)} authentication would be implemented here.`);
+      }
+    }
+
+    // Initialize auth system when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      window.auth = new AuthSystem();
+
+      // Initialize Google OAuth when Google library is loaded
+      if (typeof google !== 'undefined') {
+        initializeGoogleAuth();
+      } else {
+        // Wait for Google library to load
+        const checkGoogle = setInterval(() => {
+          if (typeof google !== 'undefined') {
+            clearInterval(checkGoogle);
+            initializeGoogleAuth();
+          }
+        }, 100);
+      }
+    });
+
+    // Handle page visibility to re-initialize Google OAuth if needed
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden && typeof google !== 'undefined') {
+        google.accounts.id.prompt();
+      }
+    });
+  </script>
+</body>
+
+</html>

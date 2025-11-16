@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazzy Latte - Loading...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Preloader Styles - Lazzy Latte Branded */
+        .preloader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/beans.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+/* Simple fade without blur */
+.preloader-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to top, 
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.4) 60%,
+        transparent 100%);
+    z-index: -1;
+}
+
+
+        /* Circular Cup Container */
+        .cup-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+
+        /* Circular Cup Body */
+        .cup-body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffffff, #f0f0f0, #e8e8e8);
+            border: 4px solid #000000;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        /* Water Fill Container */
+        .water-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        /* Wave elements with different red colors */
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("img/wave.svg") repeat-x;
+            opacity: 0.9;
+        }
+
+
+        .wave-below {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #ff0000, #ff0000);
+            border-radius: 50%;
+        }
+
+
+        /* Logo on Cup - Only visible after 100% */
+        .cup-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 340px;
+            height: 340px;
+            opacity: 0;
+            z-index: 10;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .cup-logo.visible {
+            opacity: 1;
+        }
+
+        .cup-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            border-radius: 50%;
+            background: #ffffff;
+            padding: 10px;
+            border: 3px solid #000000;
+        }
+
+        /* Brand Text */
+        .brand-text {
+            font-size: 48px;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+
+        /* Loading Text */
+        .loading-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .loading-subtext {
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        /* Wrapper for percentage + bar */
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between percentage and bar */
+    justify-content: center; /* centers both elements horizontally */
+    flex-direction: row-reverse; /* reverses order: percentage now on left */
+}
+
+/* Percentage Display */
+.percentage-display {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ff0000;
+    text-shadow: 2px 2px 0px #000000;
+    min-width: 55px; /* keeps alignment stable */
+    text-align: right; /* aligns text closer to the bar */
+    margin: 0;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+    width: 300px;
+    height: 8px;
+    background: #000000;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000000;
+}
+
+/* Progress Fill */
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff0000, #ff6b6b);
+    width: 0%;
+    border-radius: 2px;
+    transition: width 0.1s ease-out;
+    position: relative;
+}
+
+/* Shimmer Effect */
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+        /* Progress Steps */
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            font-size: 10px;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .step.active {
+            color: #ff0000;
+        }
+
+        /* Background Elements */
+        .bg-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .bg-element {
+            position: absolute;
+            opacity: 0.1;
+            font-size: 24px;
+            color: #ff0000;
+            animation: floatElement 6s infinite ease-in-out;
+        }
+
+        .bg-element:nth-child(1) {
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .bg-element:nth-child(2) {
+            top: 20%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .bg-element:nth-child(3) {
+            bottom: 30%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+
+        .bg-element:nth-child(4) {
+            bottom: 20%;
+            right: 5%;
+            animation-delay: 3s;
+        }
+
+        /* Wave Position Animations */
+        .wave._0 {
+            background-position: 0% 110%;
+        }
+
+        .wave-below._0 {
+            clip-path: polygon(0% 110%, 0% 110%, 110% 110%, 110% 110%);
+        }
+
+        .wave._25 {
+            background-position: 0% 87%;
+        }
+
+        .wave-below._25 {
+            clip-path: polygon(0% 110%, 0% 80%, 110% 80%, 110% 110%);
+        }
+
+        .wave._50 {
+            background-position: 0% 57%;
+        }
+
+        .wave-below._50 {
+            clip-path: polygon(0% 110%, 0% 58%, 110% 58%, 110% 110%);
+        }
+
+        .wave._75 {
+            background-position: 0% 30%;
+        }
+
+        .wave-below._75 {
+            clip-path: polygon(0% 110%, 0% 35%, 110% 35%, 110% 110%);
+        }
+
+        .wave._100 {
+            background-position: 0% 5%;
+        }
+
+        .wave-below._100 {
+            clip-path: polygon(0% 110%, 0% 15%, 110% 15%, 110% 110%);
+        }
+
+        /* Animation Definitions */
+        :root {
+            --ease-in: cubic-bezier(0.58, 0.42, 1, 1);
+            --ease-out: cubic-bezier(0, 0, 0.42, 0.58);
+        }
+
+        @keyframes fill-wave {
+            from {
+                background-position: -1200px 110%;
+            }
+        }
+
+        @keyframes fill-below {
+            from {
+                clip-path: polygon(0% 110%, 0% 110%, 110% 110%, 110% 110%);
+            }
+        }
+
+        @keyframes wave-0 {
+            to {
+                background-position: 1200px 110%;
+            }
+        }
+
+        @keyframes wave-25 {
+            to {
+                background-position: 1200px 87%;
+            }
+        }
+
+        @keyframes wave-50 {
+            to {
+                background-position: 1200px 57%;
+            }
+        }
+
+        @keyframes wave-75 {
+            to {
+                background-position: 1200px 30%;
+            }
+        }
+
+        @keyframes wave-100 {
+            to {
+                background-position: 1200px 5%;
+            }
+        }
+
+        /* Apply Wave Animations */
+        .wave {
+            animation-name: fill-wave, wave-0;
+            animation-duration: 5s, 7s;
+            animation-delay: 0s, 5s;
+            animation-fill-mode: forwards, none;
+            animation-iteration-count: 1, infinite;
+            animation-timing-function: var(--ease-in), var(--ease-out);
+        }
+
+        .wave._25 {
+            animation-name: fill-wave, wave-25;
+        }
+
+        .wave._50 {
+            animation-name: fill-wave, wave-50;
+        }
+
+        .wave._75 {
+            animation-name: fill-wave, wave-75;
+        }
+
+        .wave._100 {
+            animation-name: fill-wave, wave-100;
+        }
+
+        .wave.wave-2 {
+            animation-duration: 5s, 9s;
+        }
+
+        .wave.wave-3 {
+            animation-duration: 5s, 11s;
+        }
+
+        .wave-below {
+            animation: 5s var(--ease-in) forwards fill-below;
+        }
+
+        .wave-below._50 {
+            animation: 7s -2s var(--ease-in) forwards fill-below;
+        }
+
+        .wave-below._75,
+        .wave-below._100 {
+            animation: 6s -1s var(--ease-in) forwards fill-below;
+        }
+
+        /* Custom Animations */
+        @keyframes steamRise {
+            0% {
+                transform: translateX(-50%) translateY(0) scale(1);
+                opacity: 0;
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-20px) scale(1.2);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(-40px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatElement {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.1;
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 0.2;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Completion Animation */
+        .preloader-container.complete {
+            animation: slideOut 0.8s ease-in-out forwards;
+        }
+
+        @keyframes slideOut {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+        }
+
+        /* Cup Completion Celebration */
+        .cup-body.complete {
+            animation: cupCelebrate 0.6s ease-in-out 3;
+        }
+
+        @keyframes cupCelebrate {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .brand-text {
+                font-size: 36px;
+            }
+
+            .cup-container {
+                width: 250px;
+                height: 250px;
+            }
+
+            .cup-logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .progress-steps,
+            .progress-bar-container {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-text {
+                font-size: 28px;
+            }
+
+            .cup-container {
+                width: 200px;
+                height: 200px;
+            }
+
+            .cup-logo {
+                width: 80px;
+                height: 80px;
+            }
+
+            .progress-steps,
+            .progress-bar-container {
+                width: 200px;
+            }
+
+            .loading-text {
+                font-size: 14px;
+            }
+
+            .percentage-display {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader-container">
+        <!-- Background Elements -->
+        <div class="bg-elements">
+            <div class="bg-element">✧</div>
+            <div class="bg-element">✧</div>
+            <div class="bg-element">✧</div>
+            <div class="bg-element">✧</div>
+        </div>
+
+        <!-- Circular Cup with Enhanced Wave Water Fill Animation -->
+        <div class="cup-container">
+            <div class="cup-body">
+                <div class="water-fill" id="waterFill">
+                    <!-- Wave elements will be added dynamically -->
+                </div>
+                <div class="cup-logo" id="cupLogo">
+                    <img src="img/logo.png" alt="Lazzy Latte Logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <i class="fas fa-mug-hot" style="display: none; font-size: 60px; color: #000000;"></i>
+                </div>
+            </div>
+            <div class="cup-handle"></div>
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
+        </div>
+        <!-- Brand Text -->
+        <div class="brand-text">LAZZY LATTE</div>
+        <div class="progress-wrapper">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="percentage-display" id="percentageDisplay">0%</div>
+        </div>
+
+
+
+
+        <!-- Loading Text -->
+        <div class="loading-text" id="loadingText">Brewing your perfect experience</div>
+        <div class="loading-subtext">Good things come to those who wait...</div>
+
+        <!-- Progress Steps -->
+        <div class="progress-steps">
+            <div class="step" id="step1">Grinding</div>
+            <div class="step" id="step2">Brewing</div>
+            <div class="step" id="step3">Pouring</div>
+            <div class="step" id="step4">Ready</div>
+        </div>
+    </div>
+
+    <script>
+        class LazzyLattePreloader {
+            constructor() {
+                this.duration = 5000; // 5 seconds to match wave animation
+                this.startTime = Date.now();
+                this.steps = [
+                    { text: 'Selecting premium beans...', fill: 0 },
+                    { text: 'Grinding to perfection...', fill: 25 },
+                    { text: 'Brewing with precision...', fill: 50 },
+                    { text: 'Pouring rich red blend...', fill: 75 },
+                    { text: 'Adding final magic...', fill: 90 },
+                    { text: 'Your Lazzy Latte is ready!', fill: 100 }
+                ];
+                this.currentStep = 0;
+                this.waveElements = [];
+                this.logoVisible = false;
+                this.init();
+            }
+
+            init() {
+                this.createWaveElements();
+                this.animateWaterFill();
+                this.animateSteps();
+
+                window.addEventListener('load', () => {
+                    this.handlePageLoad();
+                });
+            }
+
+            createWaveElements() {
+                const waterFill = document.getElementById('waterFill');
+
+                // Create wave-below element
+                const waveBelow = document.createElement('div');
+                waveBelow.className = 'wave-below _0';
+                waterFill.appendChild(waveBelow);
+
+                // Create three wave elements with different red colors and wavelengths
+                const waveClasses = ['wave-1', 'wave-2', 'wave-3'];
+                for (let i = 0; i < 3; i++) {
+                    const wave = document.createElement('div');
+                    wave.className = `wave _0 ${waveClasses[i]}`;
+                    waterFill.appendChild(wave);
+                    this.waveElements.push(wave);
+                }
+
+                this.waveBelow = waveBelow;
+            }
+
+            updateWaveLevel(percentage) {
+                let waveClass = '_0';
+
+                if (percentage >= 100) waveClass = '_100';
+                else if (percentage >= 75) waveClass = '_75';
+                else if (percentage >= 50) waveClass = '_50';
+                else if (percentage >= 25) waveClass = '_25';
+
+                // Update all wave elements
+                this.waveElements.forEach(wave => {
+                    wave.className = wave.className.replace(/_\d+/, waveClass);
+                });
+
+                // Update wave-below element
+                this.waveBelow.className = `wave-below ${waveClass}`;
+
+                // Show logo only at 100%
+                if (percentage >= 100 && !this.logoVisible) {
+                    this.showLogo();
+                }
+            }
+
+            showLogo() {
+                const cupLogo = document.getElementById('cupLogo');
+                cupLogo.classList.add('visible');
+                this.logoVisible = true;
+            }
+
+            animateWaterFill() {
+                const percentageDisplay = document.getElementById('percentageDisplay');
+                const progressBar = document.getElementById('progressBar');
+                let progress = 0;
+
+                const interval = setInterval(() => {
+                    const elapsed = Date.now() - this.startTime;
+                    progress = Math.min(100, (elapsed / this.duration) * 100);
+
+                    // Update wave level based on progress
+                    this.updateWaveLevel(progress);
+
+                    // Update percentage display
+                    percentageDisplay.textContent = `${Math.round(progress)}%`;
+
+                    // Update progress bar
+                    progressBar.style.width = `${progress}%`;
+
+                    // Dynamic effects based on progress
+                    this.updateDynamicEffects(progress);
+
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        setTimeout(() => this.completePreloader(), 1000);
+                    }
+                }, 50);
+            }
+
+            updateDynamicEffects(progress) {
+                const steams = document.querySelectorAll('.steam');
+
+                // Steam effects
+                if (progress > 20 && progress < 90) {
+                    steams.forEach(steam => {
+                        steam.style.opacity = '1';
+                    });
+                } else {
+                    steams.forEach(steam => {
+                        steam.style.opacity = '0';
+                    });
+                }
+            }
+
+            animateSteps() {
+                this.steps.forEach((step, index) => {
+                    setTimeout(() => {
+                        this.currentStep = index;
+                        this.updateStepDisplay();
+                    }, (step.fill / 100) * this.duration);
+                });
+            }
+
+            updateStepDisplay() {
+                const loadingText = document.getElementById('loadingText');
+                const currentStep = this.steps[this.currentStep];
+
+                // Update loading text
+                loadingText.textContent = currentStep.text;
+
+                // Update progress steps
+                const steps = document.querySelectorAll('.step');
+                steps.forEach((step, index) => {
+                    if (index <= this.currentStep) {
+                        step.classList.add('active');
+                    } else {
+                        step.classList.remove('active');
+                    }
+                });
+            }
+
+            handlePageLoad() {
+                const elapsed = Date.now() - this.startTime;
+                const remaining = Math.max(500, this.duration - elapsed);
+
+                setTimeout(() => {
+                    this.completePreloader();
+                }, remaining);
+            }
+
+            completePreloader() {
+                // Final updates
+                document.getElementById('percentageDisplay').textContent = '100%';
+                document.getElementById('progressBar').style.width = '100%';
+                document.getElementById('loadingText').textContent = 'Enjoy your Lazzy Latte! ☕';
+
+                // Mark all steps as complete
+                document.querySelectorAll('.step').forEach(step => {
+                    step.classList.add('active');
+                });
+
+                // Ensure logo is visible
+                if (!this.logoVisible) {
+                    this.showLogo();
+                }
+
+                // Cup celebration animation
+                document.querySelector('.cup-body').classList.add('complete');
+
+                // Add completion class for fade out
+                setTimeout(() => {
+                    document.querySelector('.preloader-container').classList.add('complete');
+
+                    // Redirect after animation
+                    setTimeout(() => {
+                        this.redirectToMainSite();
+                    }, 800);
+                }, 1000);
+            }
+
+            redirectToMainSite() {
+                const redirectUrl = localStorage.getItem('preloaderRedirect') || 'index.html';
+                localStorage.removeItem('preloaderRedirect');
+
+                window.location.href = redirectUrl;
+            }
+        }
+
+        // Initialize preloader when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            new LazzyLattePreloader();
+        });
+
+        // Handle page refresh/cache
+        window.addEventListener('pageshow', (event) => {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        });
+
+        // Enhanced error handling for logo
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoImg = document.querySelector('.cup-logo img');
+            if (logoImg) {
+                logoImg.onerror = function () {
+                    this.style.display = 'none';
+                    const fallbackIcon = this.nextElementSibling;
+                    if (fallbackIcon) {
+                        fallbackIcon.style.display = 'block';
+                        fallbackIcon.style.borderRadius = '50%';
+                        fallbackIcon.style.background = '#ffffff';
+                        fallbackIcon.style.padding = '10px';
+                        fallbackIcon.style.border = '3px solid #000000';
+                    }
+                };
+            }
+        });
+
+        // Handle wave.svg loading error
+        document.addEventListener('DOMContentLoaded', () => {
+            const waves = document.querySelectorAll('.wave');
+            waves.forEach((wave, index) => {
+                wave.onerror = function () {
+                    console.log('Wave SVG not found, using fallback colors');
+                    if (index === 0) {
+                        this.style.background = 'linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.8), transparent)';
+                    } else if (index === 1) {
+                        this.style.background = 'linear-gradient(90deg, transparent, rgba(255, 100, 100, 0.6), transparent)';
+                    } else {
+                        this.style.background = 'linear-gradient(90deg, transparent, rgba(255, 150, 150, 0.7), transparent)';
+                    }
+                    this.style.opacity = '0.7';
+                };
+            });
+        });
+    </script>
+</body>
+
+</html>
